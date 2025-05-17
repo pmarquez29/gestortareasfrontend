@@ -1,0 +1,80 @@
+.lista-tareas-page {
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-in;
+  max-width: 900px;
+  margin: auto;
+}
+
+.lista-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.lista-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1cb5e0;
+}
+
+.logout-button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+  background: #c0392b;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+.paginacion button {
+  padding: 0.5rem 1rem;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paginacion .pagina-activa {
+  background: #1cb5e0;
+  color: white;
+  font-weight: bold;
+}
+
+.paginacion button:hover:not(.pagina-activa) {
+  background: #ddd;
+}
+
+.loader {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1cb5e0;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
