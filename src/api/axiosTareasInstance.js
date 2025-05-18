@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosTareasInstance = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: `${process.env.REACT_APP_BACKEND_URL}/api`,
 });
 
 export default axiosTareasInstance;
